@@ -8,6 +8,6 @@ namespace ConsoleApplication1.Classes
 {
     public class Liczba
     {
-
+        //test Git
     }
 }
