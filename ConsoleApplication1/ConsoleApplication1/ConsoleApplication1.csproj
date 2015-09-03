@@ -82,6 +82,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Liczba.cs" />
+    <Compile Include="Classes\Ulamek.cs" />
+    <Compile Include="Methods\Calc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
