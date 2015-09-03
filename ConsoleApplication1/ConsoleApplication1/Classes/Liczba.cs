@@ -12,7 +12,7 @@ namespace ConsoleApplication1.Classes
 
         public Liczba() { }//konstruktor bezparametrowy
 
-        protected Liczba (int _liczba)//konstruktor
+        protected Liczba (int _liczba)//konstruktor z parametrem
         {
             liczba = _liczba;
         }
