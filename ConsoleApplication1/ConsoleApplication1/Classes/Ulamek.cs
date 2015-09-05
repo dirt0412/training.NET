@@ -8,18 +8,18 @@ namespace ConsoleApplication1.Classes
 {
     public class Ulamek : Liczba //dziedziczenie klasy Liczba w klasie Ulamek
     {
-        private Liczba licznik = new Liczba();
+        private Liczba licznik = new Liczba();//pola prywatne klasy
         private Liczba mianownik = new Liczba();
 
-        protected Liczba Mianownik
+        protected Liczba Mianownik//properties - wlasciwosci
         {
-            get { return mianownik; }
-            set { mianownik = value; }
+            get { return mianownik; }//zwraca wartosc
+            set { mianownik = value; }//przypisuje wartosc
         }
-        protected int Licznik
+        protected int Licznik//properties - wlasciwosci
         {
-            get { return base.MojaLiczba; }//odwolanie do klasy bazowej tj Liczba
-            set { base.MojaLiczba = value; }
+            get { return base.MojaLiczba; }//odwolanie do klasy bazowej tj Liczba, //zwraca wartosc
+            set { base.MojaLiczba = value; }//odwolanie do klasy bazowej tj Liczba, //przypisuje wartosc
         }
         
     }

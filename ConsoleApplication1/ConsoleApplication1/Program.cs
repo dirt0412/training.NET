@@ -24,6 +24,11 @@ namespace ConsoleApplication1
                 tablicaLiczb[i] = wylosowanaLiczba;//wypelnienie tablicy liczbami
             }
 
+            Calc calc = new Calc();
+            calc.CheckNumberParity1(3);//wywolanie metody niestatycznej z instancji klasy
+
+            Calc.CheckNumberParity(3);//wywolanie metody statycznej bezpośrednio z klasy
+
             //za pomoca metody CheckNumberParity dostepnej w solucji wypisz na konsoli wszystkie parzyste liczby z tablicy tablicaLiczb[]
             //wskazowki - mozna uzyc for lub foreach oraz  Console.Write()  Console.WriteLine()
             //w jednym wierszu niech bedzie wypisane 10 liczb jak na skanie jpg
