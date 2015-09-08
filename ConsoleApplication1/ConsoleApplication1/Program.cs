@@ -35,7 +35,7 @@ namespace ConsoleApplication1
             //powyzej dostepna jest tablica tablicaLiczb[] wypelniona przypadkowymi liczbami z zakresu 0-100
             foreach (var item in tablicaLiczb)
             {
-                // nauka gita
+                // nauka gita ffff
             }
 
 
