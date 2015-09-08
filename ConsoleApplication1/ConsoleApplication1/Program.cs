@@ -11,11 +11,11 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            const int ilosc = 100;            
-            int wylosowanaLiczba, licznik=0;
-            int [] tablicaLiczb = new int[ilosc];//deklaracja tablicy liczb
+            const int ilosc = 100;
+            int wylosowanaLiczba, licznik = 0;
+            int[] tablicaLiczb = new int[ilosc];//deklaracja tablicy liczb
 
-            for (int i=0; i<ilosc; i++)
+            for (int i = 0; i < ilosc; i++)
             {
                 int seed = Guid.NewGuid().GetHashCode();//losowanie liczb
                 Random random = new Random(seed);
@@ -33,6 +33,10 @@ namespace ConsoleApplication1
             //wskazowki - mozna uzyc for lub foreach oraz  Console.Write()  Console.WriteLine()
             //w jednym wierszu niech bedzie wypisane 10 liczb jak na skanie jpg
             //powyzej dostepna jest tablica tablicaLiczb[] wypelniona przypadkowymi liczbami z zakresu 0-100
+            foreach (var item in tablicaLiczb)
+            {
+
+            }
 
 
         }
