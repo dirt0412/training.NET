@@ -36,6 +36,10 @@ namespace ConsoleApplication1
             foreach (var item in tablicaLiczb)
             {
                 // nauka gita
+                if (Calc.CheckNumberParity(item))
+                {
+
+                }
             }
 
 
