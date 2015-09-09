@@ -22,11 +22,13 @@ namespace ConsoleApplication1
                 wylosowanaLiczba = random.Next(0, 100);
 
                 tablicaLiczb[i] = wylosowanaLiczba;//wypelnienie tablicy liczbami
+             //   Console.WriteLine(tablicaLiczb[i]);
             }
+          
+           // Console.ReadKey();
 
             Calc calc = new Calc();
             calc.CheckNumberParity1(3);//wywolanie metody niestatycznej z instancji klasy
-
             Calc.CheckNumberParity(3);//wywolanie metody statycznej bezpośrednio z klasy
 
             //za pomoca metody CheckNumberParity dostepnej w solucji wypisz na konsoli wszystkie parzyste liczby z tablicy tablicaLiczb[]
@@ -37,9 +39,14 @@ namespace ConsoleApplication1
             {
                 if (Calc.CheckNumberParity(item))
                 {
-                    //...
+                    if (item % 2 == 0)
+                    {
+                        Console.Write("{0}, ", item);  
+                    }                     
                 }
+               
             }
+            Console.ReadKey();
 
 
         }
