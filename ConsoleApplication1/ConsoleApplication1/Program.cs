@@ -39,14 +39,19 @@ namespace ConsoleApplication1
             {
                 if (Calc.CheckNumberParity(item))
                 {
-                    if (item % 2 == 0)
-                    {
-                        Console.Write("{0}, ", item);  
-                    }                     
+                    Console.Write(item.ToString() + ", ");
+                    licznik++;
+                    if (licznik % 10 == 0)
+                        Console.WriteLine();
+                    //if (item % 2 == 0)
+                    //{
+                    //    Console.Write("{0}, ", item);  
+                    //}                     
                 }
                
             }
-            Console.ReadKey();
+            Console.ReadKey();
+
 
 
         }
