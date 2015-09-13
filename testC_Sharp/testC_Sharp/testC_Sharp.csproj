@@ -71,10 +71,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IPracownik.cs" />
+    <Compile Include="Interface\IPracownik.cs" />
     <Compile Include="Methods\MethodsPracownik.cs" />
-    <Compile Include="Pracownik.cs" />
-    <Compile Include="PracownikProdukcja.cs" />
+    <Compile Include="Classes\Pracownik.cs" />
+    <Compile Include="Classes\PracownikProdukcja.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton.cs" />

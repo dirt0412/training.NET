@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using testC_Sharp.Classes;
 
 namespace testC_Sharp.Methods
 {

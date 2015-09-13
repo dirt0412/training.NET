@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using testC_Sharp.Classes;
+using testC_Sharp.Interface;
 
-namespace testC_Sharp
+namespace testC_Sharp.Classes
 {
     public class PracownikProdukcja : Pracownik, IPracownik //dziedziczenie po klasie Pracownik, realizacja-"dziedziczenie" interfejsu IPracownik
     {

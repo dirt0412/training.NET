@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace testC_Sharp
+namespace testC_Sharp.Interface
 {
     public interface IPracownik
     {
