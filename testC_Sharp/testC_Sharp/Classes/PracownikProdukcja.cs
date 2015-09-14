@@ -68,5 +68,45 @@ namespace testC_Sharp.Classes
         {
             return godzinyPrzepracowane * stawkaZaGodzine * 0.98;
         }
+
+        /// <summary>
+        /// przeciazenie metody
+        /// przesloniecie metody wirtualnej WypiszPracownika z klasy bazowej Pracownik za pomoca override - polimorfizm
+        /// </summary>
+        /// <param name="pracownik"></param>
+        /// <returns></returns>
+        public override string WypiszPracownika(Pracownik pracownik)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(base.WypiszPracownika(pracownik));//odwolanie do klasy bazowej Pracownik i jej metody wirtualnej WypiszPracownika(Pracownik pracownik)
+            sb.AppendLine(", ");
+            sb.Append("Mail: ");
+            sb.Append(pracownik.Mail);
+            sb.AppendLine(", ");
+            sb.Append("Telefon: ");
+            sb.Append(pracownik.Telefon);
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// przeciazenie metody
+        /// przesloniecie metody wirtualnej WypiszPracownika z klasy bazowej Pracownik za pomoca override - polimorfizm
+        /// </summary>
+        /// <param name="pracProd"></param>
+        /// <returns></returns>
+        public override string WypiszPracownika(PracownikProdukcja pracProd)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(base.WypiszPracownika(pracProd));//odwolanie do klasy bazowej Pracownik i jej metody wirtualnej WypiszPracownika(PracownikProdukcja pracownik)
+            sb.AppendLine(", ");
+            sb.Append("Godz pracy: ");
+            sb.Append(pracProd.GodzinyPrzepracowane);
+            return sb.ToString();
+        }
+
+        //protected override string PodajNazwiskoImiePracownika(Pracownik pracownik)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

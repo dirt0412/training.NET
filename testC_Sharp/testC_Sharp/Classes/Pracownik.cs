@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace testC_Sharp.Classes
 {
-    public class Pracownik 
+    public class Pracownik : AbstractClass
     {
         /// <summary>
         /// pola klasy
@@ -181,10 +181,79 @@ namespace testC_Sharp.Classes
             else
                 return new Pracownik();//konstruktor bezparametrowy
         }
+
+        /// <summary>
+        /// metoda wirtualna - która możemy na nowo zdefiniowac w klasie pochodnej od klasy Pracownik za pomocą override - polimorfizm
+        /// </summary>
+        /// <param name="pracownik"></param>
+        /// <returns></returns>
+        public virtual string WypiszPracownika(Pracownik pracownik)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Nazwisko: ");
+            sb.Append(pracownik.Nazwisko);
+            sb.Append(", ");
+            sb.Append("Imie: ");
+            sb.Append(pracownik.Imie);
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// przeciazenie metody wirtualnej - którą możemy na nowo zdefiniowac w klasie pochodnej od klasy Pracownik za pomocą override - polimorfizm
+        /// </summary>
+        /// <param name="pracownik"></param>
+        /// <returns></returns>
+        public virtual string WypiszPracownika(PracownikProdukcja pracownik)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Nazwisko: ");
+            sb.Append(pracownik.Nazwisko);
+            sb.Append(", ");
+            sb.Append("Imie: ");
+            sb.Append(pracownik.Imie);
+            sb.AppendLine(", ");
+            sb.Append("Dzial: ");
+            sb.Append(pracownik.Dzial);
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// przesloniecie(realizacja) metody abstrakcyjnej z klasy bazowej  AbstractClass
+        /// </summary>
+        /// <param name="pracownik"></param>
+        /// <returns></returns>
+        protected override string PodajNazwiskoImiePracownika(Pracownik pracownik)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Nazwisko: ");
+            sb.Append(pracownik.Nazwisko);
+            sb.Append(", ");
+            sb.Append("Imie: ");
+            sb.Append(pracownik.Imie);
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// przesloniecie(realizacja) metody abstrakcyjnej z klasy bazowej  AbstractClass
+        /// </summary>
+        /// <param name="pracownik"></param>
+        /// <returns></returns>
+        public override int PodajRokUrodzeniaPracownika(Pracownik pracownik)
+        {
+            return pracownik.RokUrodzenia;
+        }
+
+        /// <summary>
+        /// przesloniecie(realizacja) metody abstrakcyjnej z klasy bazowej  AbstractClass
+        /// </summary>
+        /// <param name="pracProdukcja"></param>
+        /// <returns></returns>
+        protected override double PodajWynagrodzeniePracownika(PracownikProdukcja pracProdukcja)
+        {
+            return pracProdukcja.Wynagrodzenie(pracProdukcja.GodzinyPrzepracowane, pracProdukcja.StawkaZaGodzine);
+        }
         #endregion
 
-       
-
-
+        
     }
 }

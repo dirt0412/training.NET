@@ -33,16 +33,18 @@ namespace testC_Sharp
             Pracownik pracownik2 = new Pracownik { Nazwisko = "Nowak", Imie = "Stefan", Mail = "ns@poczta.onet.pl", RokUrodzenia = 1991, Telefon = "12345556711" };//tworzenie obiektu Pracownik za pomoca konstruktora - inny sposob
             methodsPracownik.AddRowPracownik(pracownik2, dt);//dodanie do DataTable nowego wiersza z danymi
             dataGridView1.DataSource = dt;//polaczenie danych o pracownikach z obiektem dataGridView - wyswietlenie danych
+
+            //pracownik1.
             #endregion
 
             #region pracownikProdukcja
             //operacje dla klasy PracownikProdukcja - dodawanie za pomoca konstruktora
-            PracownikProdukcja pp1 = new PracownikProdukcja { Dzial = "Pakownia", GodzinyPrzepracowane = 16, Imie = "H12", Nazwisko = "L34", Mail = "mail1@op.pl", RokUrodzenia = 1966, StawkaZaGodzine = 22.5, Telefon = "345678234" };
+            PracownikProdukcja pp1 = new PracownikProdukcja { Dzial = "Pakownia", GodzinyPrzepracowane = 16, Imie = "Edward", Nazwisko = "Smiały", Mail = "mail1@op.pl", RokUrodzenia = 1966, StawkaZaGodzine = 22.5, Telefon = "345678234" };
 
             //operacje dla klasy PracownikProdukcja - dodawanie za pomoca przypisania do wlasciwosci z klasy PracownikProdukcja oraz z klasy po ktorej jest dziedziczenie tj Pracownik
             PracownikProdukcja pp2 = new PracownikProdukcja();
-            pp2.Nazwisko = "G45";
-            pp2.Imie = "B89";
+            pp2.Nazwisko = "Falkowski";
+            pp2.Imie = "Piotr";
             pp2.StawkaZaGodzine = 27.55;
             pp2.GodzinyPrzepracowane = 32;
             pp2.Dzial = "Magazyn";
@@ -53,6 +55,16 @@ namespace testC_Sharp
             //realizacja interfejsu z IPracownik
             pp1.Wynagrodzenie(pp1.GodzinyPrzepracowane, pp1.StawkaZaGodzine);
             pp2.Wynagrodzenie(0, 0);
+
+            //przyklad przeciazenia metod WypiszPracownika
+            label1.Text = pp1.WypiszPracownika(pracownik1);//metoda z polimorfizmu WypiszPracownika(Pracownik pracownik)
+            label2.Text = pp1.WypiszPracownika(pp1);//metoda z polimorfizmu WypiszPracownika(PracownikProdukcja pracProd)
+            label3.Text = pracownik1.PodajRokUrodzeniaPracownika(pracownik2).ToString();//metoda z klasy abstrakcyjnej AbstractClass zdefiniowana w klasie Pracownik
+
+            PracownikProdukcja pp3 = new PracownikProdukcja();
+            //wywolanie metody NIE abstrakcyjnej DodajWynagrodzeniaPracownikow z klasy abstrakcyjnej AbstractClass
+            label4.Text = pp3.DodajWynagrodzeniaPracownikow(pp1, pp2).ToString();
+
             //MessageBox.Show(pracownik1.ID + "\n" + pracownik2.ID, "ID Pracownikow");
             #endregion
 
