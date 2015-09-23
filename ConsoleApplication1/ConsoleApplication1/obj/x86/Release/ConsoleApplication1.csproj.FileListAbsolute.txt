@@ -1,0 +1,5 @@
+D:\C_sharp\Projekty\Training\ConsoleApplication1\ConsoleApplication1\bin\x86\Release\ConsoleApplication1.exe.config
+D:\C_sharp\Projekty\Training\ConsoleApplication1\ConsoleApplication1\bin\x86\Release\ConsoleApplication1.exe
+D:\C_sharp\Projekty\Training\ConsoleApplication1\ConsoleApplication1\bin\x86\Release\ConsoleApplication1.pdb
+D:\C_sharp\Projekty\Training\ConsoleApplication1\ConsoleApplication1\obj\x86\Release\ConsoleApplication1.exe
+D:\C_sharp\Projekty\Training\ConsoleApplication1\ConsoleApplication1\obj\x86\Release\ConsoleApplication1.pdb
