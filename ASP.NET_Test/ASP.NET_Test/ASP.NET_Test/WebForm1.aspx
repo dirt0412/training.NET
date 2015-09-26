@@ -13,8 +13,8 @@
         <asp:Label ID="Label6" runat="server">czas: </asp:Label>
 &nbsp;<asp:Label ID="Label5" runat="server" Font-Bold="True"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Zapisz" Width="85px" />
+        <%--<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>--%>
+&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Refresh" Width="85px" />
         <br />
         <asp:Label ID="Label1" runat="server" Text="Pierwsze wywolanie strony:"></asp:Label>
 &nbsp;
