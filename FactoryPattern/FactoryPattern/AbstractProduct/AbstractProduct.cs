@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// Zazwyczaj fabryka abstrakcyjna jest budowana w postaci interfejsu lub klasy abstrakcyjnej.
+/// Następnie (w oprogramowaniu klienta) tworzone są konkretne implementacje fabryki.
+/// </summary>
 namespace FactoryPattern.AbstractProduct
 {
     public abstract class AbstractProduct
