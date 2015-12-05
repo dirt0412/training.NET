@@ -1,9 +1,0 @@
-d:\C_sharp\Projekty\Training\testC_Sharp\testC_Sharp\bin\x64\Release\testC_Sharp.exe.config
-d:\C_sharp\Projekty\Training\testC_Sharp\testC_Sharp\bin\x64\Release\testC_Sharp.exe
-d:\C_sharp\Projekty\Training\testC_Sharp\testC_Sharp\bin\x64\Release\testC_Sharp.pdb
-d:\C_sharp\Projekty\Training\testC_Sharp\testC_Sharp\obj\x64\Release\testC_Sharp.Form1.resources
-d:\C_sharp\Projekty\Training\testC_Sharp\testC_Sharp\obj\x64\Release\testC_Sharp.Properties.Resources.resources
-d:\C_sharp\Projekty\Training\testC_Sharp\testC_Sharp\obj\x64\Release\testC_Sharp.csproj.GenerateResource.Cache
-d:\C_sharp\Projekty\Training\testC_Sharp\testC_Sharp\obj\x64\Release\testC_Sharp.exe
-d:\C_sharp\Projekty\Training\testC_Sharp\testC_Sharp\obj\x64\Release\testC_Sharp.pdb
-d:\C_sharp\Projekty\Training\testC_Sharp\testC_Sharp\obj\x64\Release\testC_Sharp.csprojResolveAssemblyReference.cache
