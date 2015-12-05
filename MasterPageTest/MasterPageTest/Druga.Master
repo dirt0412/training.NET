@@ -12,7 +12,7 @@
     <h1>Moja strona Druga Master</h1>
     <hr />
     <div style="width: 200px; float: left; height: auto;">
-        <p>Menu: <a href="~/Default.aspx">Home</a>, <a href="http://www.google.com">Wyszukiwarka</a></p>
+       
     </div>
     <div style="width: auto; float: left;">
         <form id="form1" runat="server">
