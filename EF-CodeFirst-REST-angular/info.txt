@@ -1,0 +1,15 @@
+1.Visual Studio 2015. Goto File --> New --> Project , on the left select Web and ASP.NET Web Application.
+
+2.Choose the WebAPI template from the dialog box shown.
+
+3.Adding Models classes Rezerwacja and Goœcie for Database. 
+
+4.Adding the Web API controller class - Web API2 Controller with actions, using Entity Framework.
+
+5.Setting up the Database. Tools -> Nuget Package Manager and select Package Manager Console: execute command: Enable-Migrations
+
+6.Add some code in the Configuration.Seed method folder Migrations file Configuration.cs.
+
+7.Next in the Package Manager console execute the following two command: Add-Migration Initial , Update-Database. 
+
+8.In java script (folder Scripts file script.js)  get data to Views\Home file index by jquery and angular.

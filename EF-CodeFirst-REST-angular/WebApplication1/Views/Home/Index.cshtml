@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml" ng-app>
+<head>
+    <script src="~/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/script.js"></script>
+</head>
+
+<body ng-controller="EmpCtrl">
+    <div class="container">
+        <h2>Rezerwacje - lista</h2>
+
+            <input type="button" id="btnRezerwacje" value="Rezerwacje" ng-click="getRezerwacje()" class="btn btn-info" />
+        <br /><br />
+        <table id="table12" border="1" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Id Gosc
+                    </th>
+                    <th>
+                        Prowizja
+                    </th>
+                    <th>
+                        Data Zameldowania Wymeldowania
+                    </th>
+                    <th>
+                        Cena
+                    </th>
+                    <th>
+                        Daty Utworzenia
+                    </th>
+                    <th>
+                        Kod Rezerwacji
+                    </th>
+                </tr>
+
+            </thead>
+            <tr ng-repeat="e in listaRezerwacji">
+                <td>
+                    {{e.Id}}
+                </td>
+                <td>
+                    {{e.IdGosc}}
+                </td>
+                <td>
+                    {{e.Prowizja}}
+                </td>
+                <td>
+                    {{e.DataZameldowaniaWymeldowania}}
+                </td>
+                <td>
+                    {{e.Cena}}
+                </td>
+                <td>
+                    {{e.DatyUtworzenia}}
+                </td>
+                <td>
+                    {{e.KodRezerwacji}}
+                </td>
+            </tr>
+        </table>
+        </div>
+</body>
+</html>   
