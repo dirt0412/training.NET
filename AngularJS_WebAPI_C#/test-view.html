@@ -1,0 +1,75 @@
+﻿<span>{{testViewCtrl.text}}</span><!--first way-->
+<br />
+<span ng-bind="testViewCtrl.text"> </span><!--second way-->
+
+<input type="button" name="name" value="OK" ng-click="testViewCtrl.onOK('test')"  />
+<input type="button"  value="GetOne" ng-click="testViewCtrl.getOne()" />
+<input type="button" value="GetOneNew" ng-click="testViewCtrl.getOneNew()" />
+<br />
+<input type="button" value="GetAllPerson" ng-click="testViewCtrl.getAllPerson()" />
+<input type="button" value="GetPersonsByMail" ng-click="testViewCtrl.getPersonsByMail2('mail333@m.com')" />
+<br /><br />
+<div ng-show="testViewCtrl.isAnyPersons">
+    <table id="table12" border="1">
+        <thead>
+            <tr>
+                <th style="width:200px;">
+                    Name
+                </th>
+                <th style="width:200px;">
+                    Adress
+                </th>
+                <th style="width:60px;">
+                    Age
+                </th>
+                <th style="width:200px;">
+                    Mail
+                </th>
+                <th style="width:200px;">
+                    Hobby
+                </th>
+            </tr>
+
+        </thead>
+        <tr ng-repeat="e in testViewCtrl.listOfPersons">
+            <td>
+                {{e.name}}
+            </td>
+            <td>
+                {{e.adress}}
+            </td>
+            <td>
+                {{e.age}}
+            </td>
+            <td>
+                {{e.mail}}
+            </td>
+            <td>
+                {{e.hobby}}
+            </td>
+        </tr>
+    </table>
+</div>
+<br />
+<form name="form2" >
+    Name<input name="name" type="text" ng-model=testViewCtrl.person.name required ng-minlength="3" />
+    
+    Adress<input type="text" ng-model=testViewCtrl.person.adress />
+
+    Mail<input type="text" ng-model=testViewCtrl.person.mail required />
+
+    Age<input type="text" ng-model=testViewCtrl.person.age />
+
+    Hobby<input type="text" ng-model=testViewCtrl.person.hobby />
+
+    <!--<div ng-messages="form2.name.$error">
+        <p ng-message="minlength">Your name is too short.</p>
+        <p ng-message="required">Your name is required.</p>
+    </div>-->
+</form>   
+<br />      
+<input type="button" value="addNewPerson" ng-click="testViewCtrl.addNewPerson()" />
+<input type="button" value="updatePerson" ng-click="testViewCtrl.updatePerson2()" />
+<br />
+Delete by mail<input type="text" ng-model=testViewCtrl.deleteByMail /> 
+<input type="button" value="deleteByMail" ng-click="testViewCtrl.deletePerson()" />
